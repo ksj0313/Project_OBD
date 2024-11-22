@@ -1,0 +1,13 @@
+names:
+- left
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: left-heso7
+  url: https://universe.roboflow.com/kimsj020406/left-heso7/dataset/2
+  version: 2
+  workspace: kimsj020406
+
+test: ../test/images
+train: ../left-2/train/images
+val: ../left-2/valid/images
