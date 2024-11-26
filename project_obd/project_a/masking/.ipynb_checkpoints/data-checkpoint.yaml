@@ -1,0 +1,14 @@
+names:
+- '30'
+- diamond
+- forward
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: -7ww49
+  url: https://universe.roboflow.com/obd-team/-7ww49/dataset/1
+  version: 1
+  workspace: obd-team
+
+train: "../masking/train/images"
+val: "../masking/valid/images"

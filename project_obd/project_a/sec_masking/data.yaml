@@ -1,0 +1,18 @@
+names:
+- '30'
+- diamond
+- forward
+- forward_lft
+- forward_right
+- right
+nc: 6
+roboflow:
+  license: CC BY 4.0
+  project: -2-i713l
+  url: https://universe.roboflow.com/obd-team/-2-i713l/dataset/3
+  version: 3
+  workspace: obd-team
+
+
+train: "../sec_masking/train/images"
+val: "../sec_masking/valid/images"

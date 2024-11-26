@@ -1,3 +1,0 @@
-CREATE DATABASE obd_db;
-CREATE USER obd_user@localhost IDENTIFIED BY '1234';
-CREATE USER obd_user@ 
