@@ -1,0 +1,123 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transition: 0.25s ease-in-out;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger-icon span:nth-child(2) {
+  top: 8px;
+}
+
+.hamburger-icon span:nth-child(3) {
+  top: 16px;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  top: 8px;
+  transform: rotate(45deg);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-45deg);
+}
+
+.menu-items {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background: rgb(128, 119, 119);
+  border: 1px solid #0c0c0c;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background: #d3b5b5;
+}
+
+/*  */
+.right-corner {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* 브레이크 엑셀 이미지 속성 */
+.right-corner img {
+  max-width: 200%; /* 부모 요소의 너비에 맞게 최대 너비 설정 */
+  max-height: 200px; /* 원하는 최대 높이 설정 (예: 100px) */
+  object-fit: contain; /* 이미지 비율 유지 */
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.instructions {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 14px;
+}

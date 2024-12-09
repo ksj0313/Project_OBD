@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  header {
+    background-color: #2f7de2f1;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .home-screen {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .brake-pedal, .accelerator-pedal {
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .brake-pedal {
+    left: 80px;
+    top: 360px;
+  }
+  
+  .accelerator-pedal {
+    right: 90px;
+    bottom: 450px;
+  }
+  
+  .road-sign, .person {
+    position: absolute;
+    text-align: center;
+  }
+  
+  .road-sign {
+    left: 400px;
+    top: 130px;
+  }
+  
+  .person {
+    right: 400px;
+    bottom: 170px;
+  }
+  
+  .road-sign img, .person img {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .road-sign p, .person p {
+    font-size: 40px;
+    margin-top: 5px;
+  }
+  
+  .settings-icon {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    color: white;
+    font-size: 30px;
+  } 
+  
+  input[type="range"] {
+    width: 200px;
+    height: 10px;
+  }
+  
+  /* div {
+    background-image: url('../img/mainback.gif');
+    background-position: "center";
+  } */
+  
+  /* 모든 div가 아닌 특정 클래스에만 적용하도록 변경 */
+.main-page {
+  background-image: url('../img/mainback.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+  .control-container:hover img {
+      transform: translateY(-5px);
+      transition: transform 0.2s ease;
+  }
+  
+  .control-container:hover input[type="range"] {
+      background-color: rgba(238, 224, 224, 0.3);
+  }
+  
+  
